@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import styles from './page.module.css'
 import type { Metadata } from 'next'
 
 
-import { Flex, Box, Container, Heading, WrapItem, Center, Text, Wrap } from '@chakra-ui/react'
+import { Image, Flex, Box, Container, Heading, WrapItem, Center, Text, Wrap } from '@chakra-ui/react'
 
 export const metadata: Metadata = {
   title: 'Caos Mental Geral',
@@ -19,9 +18,16 @@ export default function Home() {
         <Flex flexDir={'column'} justify={'space-between'} w="250px" h="100vh" bg="white" p="2em">
           <Box>
             <Flex>
-              <Heading fontSize={'2.5em'}>CMG</Heading>
+              <Image
+                src='/caos.png'
+                alt='Caos Mental'
+              // boxSize='40px'
+              // objectFit='cover'
+              />
+              {/* <Heading pl={'5px'} fontSize={'2.3em'}>CM</Heading> */}
             </Flex>
             <Flex flexDir={'column'}>
+              <br />
               <Flex>Cultura</Flex>
               <Flex>Saúde</Flex>
               <Flex>Tecnologia</Flex>
