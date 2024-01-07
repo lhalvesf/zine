@@ -59,7 +59,7 @@ export default function Home() {
 
           <Box minW={'100%'}>
             <Flex w={'100%'} justify={'space-between'} alignContent={'end'} >
-              <Heading>Dense tundra's stories</Heading>
+              <Heading>Dense tundra stories</Heading>
               <Text>Lil Satyr, 6/6/6</Text>
             </Flex>
             <Divider borderColor={'black'}></Divider>
